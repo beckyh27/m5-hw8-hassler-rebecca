@@ -9,3 +9,8 @@
 body {
   font-family: 'Bebas Neue', Impact, sans-serif;
 }
+
+h1 {
+  background-color: #6003C3;
+  color: #FFFFFF;
+}
