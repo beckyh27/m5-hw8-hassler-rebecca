@@ -25,13 +25,14 @@ h1 {
   padding: 0;
   color: #FFFFFF;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 main p {
   color: #6003C3;
   font-size: 1.8rem;
   text-align: center;
+  padding: 0 10px;
 }
 
 .boxes {
@@ -61,3 +62,23 @@ main p {
 #box-3 {
   background-color: #A5FF01;
 }
+
+/************************************* START 768PX MEDIA QUERY *************************************/
+@media (min-width: 768px) {
+  .boxes {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+/************************************* END 768PX MEDIA QUERY *************************************/
+/************************************* START 1024PX MEDIA QUERY *************************************/
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4.4rem;
+  }
+  .box {
+    padding: 35px 70px;
+    border: #6003C3 solid 12px;
+  }
+}
+/************************************* END 1024PX MEDIA QUERY *************************************/
