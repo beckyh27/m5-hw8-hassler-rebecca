@@ -1,9 +1,13 @@
 // Create an Array of at least 3 losing messages
-var losingArray = ["Sorry, you did not win", "Try again", "Better luck next time"]
+const losingArray = ["Sorry, you did not win", "Try again", "Better luck next time"]
 
 // Create variables to count wins and losses
 
+
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
+var message = document.getElementById('message')
+var wins = document.getElementById('wins')
+var losses = document.getElementById('losses')
 
 // target all .box elements and attach a click event listener to each one using a loop
 
