@@ -1,8 +1,13 @@
 // Create an Array of at least 3 losing messages
-const losingArray = ["Sorry, you did not win", "Try again", "Better luck next time"]
+var messages = [
+    'sorry, you did not win', 
+    'try again', 
+    'better luck next time'
+]
 
 // Create variables to count wins and losses
-
+var wins = 0
+var losses = 0
 
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
 var message = document.getElementById('message')
