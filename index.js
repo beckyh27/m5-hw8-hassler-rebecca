@@ -10,9 +10,9 @@ var wins = 0
 var losses = 0
 
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
-var message = document.getElementById('message')
-var wins = document.getElementById('wins')
-var losses = document.getElementById('losses')
+var messageEl = document.getElementById('message')
+var winsEl = document.getElementById('wins')
+var lossesEl = document.getElementById('losses')
 
 // target all .box elements and attach a click event listener to each one using a loop
 
