@@ -1,4 +1,5 @@
 // Create an Array of at least 3 losing messages
+var losingArray = ["Sorry, you did not win", "Try again", "Better luck next time"]
 
 // Create variables to count wins and losses
 
