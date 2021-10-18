@@ -1,8 +1,8 @@
 // Create an Array of at least 3 losing messages
 var messages = [
-    'sorry, you did not win', 
-    'try again', 
-    'better luck next time'
+    'sorry, you did not win.', 
+    'try again!', 
+    'better luck next time!'
 ]
 
 // Create variables to count wins and losses
@@ -26,36 +26,30 @@ for (var i=0; i < boxElements.length; i++) {
     boxElement.addEventListener("click", function(event) {
         var boxNumWasClicked = event.target.textContent
         var numWasClicked = (parseInt(boxNumWasClicked, 10))
-        // console.log(numWasClicked)
+
 
         // create a random number between 1-3 and store it to a variable
         // This number will represent the winning box
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * max);
-        }
-        var randomNum = (getRandomInt(3));
+
+        var randomNum = Math.floor(Math.random() * 3) + 1
 
         // determine if the box clicked is equal to the random number
         // if the numbers match, display a winning message by changing the text content of the div#message element
         var winCount = 0
         var lossCount = 0
         if (numWasClicked === randomNum) {
-            messageEl.textContent = "You win"
+            messageEl.textContent = "You win!"
             winCount++
-            winsEl.textContent = "Wins: " + winCount            
+            console.log(winCount)
+            winsEl.textContent = "Wins: " + winCount        
         } else {
-            messageEl.textContent = "You lose"
+            var lossMessage = messages[Math.floor(Math.random() * messages.length)]
+            messageEl.textContent = lossMessage
             lossCount++
             lossesEl.textContent = "Losses: " + lossCount
         }
-      });
+    })
 }
-
-
-
-
-
-
 
 
 // if the numbers match, increment wins and display the win count in div#wins
